@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         initViews();
-
 
         buttonListener = new FlicButtonAdapter() {
             @Override
@@ -73,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnScanFlickButton:
 
                 startActivity(new Intent(MainActivity.this, FlicScanActivity.class));
-
                 //onButtonScan();
                 break;
 
